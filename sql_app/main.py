@@ -20,9 +20,9 @@ def get_db():
         db.close()
 
 
-@app.get("")
+@app.get("/")
 def main():
-    return {"Hi Daniel!"}
+    return {"Hello world"}
 
 
 @app.post("/users/", response_model=schemas.User)
